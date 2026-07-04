@@ -66,7 +66,7 @@ The calculator follows the official ABES/AKTU grading system and automatically c
 ## 🏠 Home Page
 
 <p align="center">
-<img src="homepage.png" width="900">
+<img src="homepagee.png" width="900">
 </p>
 
 
