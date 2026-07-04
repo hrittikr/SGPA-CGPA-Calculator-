@@ -22,37 +22,83 @@ body{
 
 .top-header{
     position: fixed;
-    top: 0;
-    left: 0;
+    top:0;
+    left:0;
 
-    width: 100%;
-    height: 115px;
+    width:100%;
+    height:115px;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
-    padding: 15px 40px;
-
-    background: rgba(255,255,255,0.96);
-    backdrop-filter: blur(10px);
-
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-
-    z-index: 9999;
-
-    box-sizing: border-box;
-}
-.top-header{
+    padding:15px 40px;
 
     background:#e3eef4;
-
     border-bottom:2px solid #6f83af;
 
     box-shadow:0 10px 30px rgba(0,0,0,.12);
 
+    z-index:9999;
+
+    box-sizing:border-box;
+
+    flex-direction:row;
+
+    gap:20px;
 }
+@media screen and (max-width:768px){
+
+.top-header{
+
+    position:relative;
+
+    height:auto;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+    gap:15px;
+}
+
+.college-info{
+    justify-content:center;
+}
+
+.title-section{
+    text-align:center;
+}
+
+.title-section h1{
+    font-size:28px;
+}
+
+.title-section h3{
+    font-size:18px;
+}
+
+.header-right{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.developer{
+    flex-direction:column;
+    text-align:center;
+}
+
+}
+
+
+
+
 .college-info img,
 .developer img{
 
@@ -154,7 +200,7 @@ body.dark{
 
 /* Header */
 
-body.dark .top-header{
+body.dark header{
     background:#1b1b1b;
     color:white;
 }
@@ -264,14 +310,7 @@ body.dark a{
 }
 @media(max-width:900px){
 
-.top-header{
 
-    flex-direction:column;
-
-    gap:25px;
-
-    text-align:center;
-}
 
 .college-info,
 .developer{
@@ -928,7 +967,7 @@ body.dark::before{
 
 /* ---------- Header ---------- */
 
-body.dark .top-header{
+body.dark header{
 
     background:linear-gradient(135deg,#0f172a,#1e293b);
 
@@ -1122,14 +1161,3 @@ body.dark .developer img{
 
 /* ---------- Smooth ---------- */
 
-body,
-.subject-card,
-.student-card,
-.result-card,
-button,
-input,
-.top-header{
-
-    transition:.35s ease;
-
-}
