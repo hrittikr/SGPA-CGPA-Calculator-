@@ -198,9 +198,7 @@ If you'd like to improve this project:
 https://github.com/hrittikr
 
 ### LinkedIn
-
-[(Add your LinkedIn profile here)
-](https://www.linkedin.com/in/hrittik-raushan-a6577b202/)
+https://www.linkedin.com/in/hrittik-raushan-a6577b202/
 ---
 
 # ⭐ Support
