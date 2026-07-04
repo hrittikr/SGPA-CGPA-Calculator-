@@ -375,7 +375,7 @@ h1{
 
     text-align:center;
 
-    color:#1e3a8a;
+    color:#245ab8;
 
     margin-bottom:10px;
 
@@ -804,6 +804,7 @@ button{
 .student-details h2{
 
     text-align:left;
+    font-size:20px;
 
     margin-bottom:20px;
 
@@ -872,6 +873,8 @@ button{
 
 .footer strong{
     color:#60a5fa;
+    font-weight:600;
+    font-style: italic;
 }
 
 .footer-links{
@@ -1009,7 +1012,18 @@ body.dark select{
 body.dark input::placeholder{
 
     color:#cbd5e1;
+    font-style: italic;
 
+}
+/* Sabhi input boxes ke placeholder ko light karne ke liye */
+input::placeholder {
+    color: #888888;      /* Color ko light gray karne ke liye */
+    opacity: 0.4;        /* Opacity kam karne ke liye (0.1 se 1.0 ke bich rakhe) */
+}
+
+/* Safari aur Edge browsers ke support ke liye */
+input::-webkit-input-placeholder {
+    opacity: 0.6;
 }
 
 /* ---------- Buttons ---------- */
