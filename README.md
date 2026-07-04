@@ -199,8 +199,8 @@ https://github.com/hrittikr
 
 ### LinkedIn
 
-(Add your LinkedIn profile here)
-
+[(Add your LinkedIn profile here)
+](https://www.linkedin.com/in/hrittik-raushan-a6577b202/)
 ---
 
 # ⭐ Support
