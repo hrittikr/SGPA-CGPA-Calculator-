@@ -20,6 +20,300 @@ body{
 
 }
 
+.top-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 115px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 40px;
+
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+
+    z-index: 9999;
+
+    box-sizing: border-box;
+}
+.top-header{
+
+    background:#e3eef4;
+
+    border-bottom:2px solid #6f83af;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+.college-info img,
+.developer img{
+
+    transition:.4s;
+}
+
+.college-info img:hover,
+.developer img:hover{
+
+    transform:scale(1.08);
+}
+/* LEFT */
+
+.college-info{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.college-info img{
+
+    width:85px;
+    height:85px;
+    position: relative;
+    
+
+    object-fit:contain;
+}
+
+.college-info h2{
+
+    color:#7d1f1f;
+    font-size:30px;
+    margin:0;
+}
+
+.college-info p{
+
+    margin:5px 0 0;
+    color:#444;
+}
+
+
+/* CENTER */
+.title-section h1{
+
+    color:white;
+
+    text-shadow:0 0 15px rgba(255,255,255,.4);
+}
+
+.title-section{
+
+    text-align:center;
+}
+
+.title-section h1{
+
+    color:#7d3d1d;
+
+    margin: 2px;;
+
+    font-size:42px;
+}
+
+.title-section h3{
+
+    margin-top:2px;
+
+    color:#595656;
+
+    font-size:20px;
+}
+
+/* toggle dark theme */
+#theme-toggle{
+    padding:10px 18px;
+    border:none;
+    border-radius:30px;
+    background:#1d4ed8;
+    color:white;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#theme-toggle:hover{
+    background:#0f3bbd;
+    transform:scale(1.05);
+}
+/* ================= DARK MODE ================= */
+
+body.dark{
+    background:#121212;
+    color:#ffffff;
+}
+
+/* Header */
+
+body.dark .top-header{
+    background:#1b1b1b;
+    color:white;
+}
+
+/* Cards */
+
+body.dark .card,
+body.dark .container,
+body.dark .subject-card,
+body.dark .result-card{
+    background:#1e1e1e;
+    color:white;
+}
+
+/* Inputs */
+
+body.dark input,
+body.dark select{
+    background:#2c2c2c;
+    color:white;
+    border:1px solid #555;
+}
+
+/* Table */
+
+body.dark table{
+    background:#1e1e1e;
+    color:white;
+}
+
+body.dark th{
+    background:#0d47a1;
+}
+
+body.dark td{
+    border-color:#444;
+}
+
+/* Buttons */
+
+body.dark button{
+    background:#2563eb;
+    color:white;
+}
+
+/* Footer */
+
+body.dark footer{
+    background:#181818;
+    color:white;
+}
+
+/* Links */
+
+body.dark a{
+    color:#60a5fa;
+}
+
+
+/* RIGHT */
+
+.developer{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+    flex-wrap: wrap;
+}
+
+.developer img{
+
+    width:75px;
+
+    height:75px;
+    size-adjust: small-caps;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:3px solid #5175d7;
+}
+
+.developer p{
+
+    margin:0;
+
+    color:#5a5353;
+
+    font-size:15px;
+}
+
+.developer h4{
+
+    margin:4px 0;
+
+    color:#2247a5;
+
+    font-size:22px;
+}
+
+.developer span{
+
+    color:#555;
+
+    font-size:16px;
+}
+@media(max-width:900px){
+
+.top-header{
+
+    flex-direction:column;
+
+    gap:25px;
+
+    text-align:center;
+}
+
+.college-info,
+.developer{
+
+    flex-direction:column;
+}
+
+.title-section h1{
+
+    font-size:32px;
+}
+
+.title-section h3{
+
+    font-size:22px;
+}
+
+}
+
+body{
+    position: relative;
+    margin:0;
+    padding:20px;
+    background:#f4f7fb;
+    overflow-x:hidden;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+
+    background:url("image/ABESbg.webp") center center no-repeat;
+    background-size:1620px;
+
+    opacity:0.97;          /* 0.05 - 0.10 looks best */
+    z-index:-1;
+    pointer-events:none;
+
+
+}
+
 .container{
 
     width:95%;
@@ -599,5 +893,243 @@ button{
         width:220px;
         justify-content:center;
     }
+
+}
+
+/* ===================================================
+                PREMIUM DARK MODE
+=================================================== */
+
+html{
+    transition:0.4s;
+}
+
+body{
+    transition:.4s;
+}
+
+/* ---------- Body ---------- */
+
+body.dark{
+
+    background:#0f172a;
+    color:#f8fafc;
+
+}
+
+/* Background image dark */
+
+body.dark::before{
+
+    opacity:.10;
+    filter:brightness(.35);
+
+}
+
+/* ---------- Header ---------- */
+
+body.dark .top-header{
+
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 5px 25px rgba(0,0,0,.45);
+
+}
+
+
+/* ---------- Main Cards ---------- */
+
+body.dark .student-card,
+body.dark .subject-card,
+body.dark .result-card,
+body.dark .container{
+
+    background:#1e293b;
+
+    border:1px solid #334155;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+}
+
+/* ---------- Inputs ---------- */
+
+body.dark input,
+body.dark select{
+
+    background:#334155;
+
+    color:#ffffff;
+
+    border:1px solid #475569;
+
+}
+
+body.dark input::placeholder{
+
+    color:#cbd5e1;
+
+}
+
+/* ---------- Buttons ---------- */
+
+body.dark button{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+body.dark button:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* ---------- Titles ---------- */
+
+body.dark h1
+{
+
+    color:#bbc1c8;
+
+}
+body.dark h2
+{
+
+    color:#15191e;
+
+}
+body.dark h3
+{
+
+    color:#888e95;
+
+}
+body.dark h4
+{
+
+    color:#e0e0e0;
+
+}
+body.dark h5{
+
+    color:#e5dcdc;
+
+}
+
+/* Subject Heading */
+
+body.dark .subject-title{
+
+    color:#eee6e6;
+
+}
+
+/* ---------- Labels ---------- */
+
+body.dark label,
+body.dark p,
+body.dark span{
+
+    color:#f3f3f3;
+
+}
+
+/* ---------- Table ---------- */
+
+body.dark table{
+
+    background:#1e293b;
+
+    color:white;
+
+}
+
+body.dark th{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+body.dark td{
+
+    border-color:#334155;
+
+}
+
+/* ---------- Footer ---------- */
+
+body.dark footer{
+
+    background:#0f172a;
+
+    color:white;
+
+    border-top:1px solid #334155;
+
+}
+
+/* ---------- Links ---------- */
+
+body.dark a{
+
+    color:#60a5fa;
+
+}
+
+/* ---------- Result ---------- */
+
+body.dark #sgpa,
+body.dark #cgpa,
+body.dark #percentage{
+
+    color:#091114;
+
+    font-weight:bold;
+
+}
+
+/* ---------- Total ---------- */
+
+body.dark .total{
+
+    color:#38bdf8;
+
+}
+
+/* ---------- Grade ---------- */
+
+body.dark .grade{
+
+    font-weight:bold;
+
+}
+
+/* ---------- Logo ---------- */
+
+body.dark .college-logo,
+body.dark .developer img{
+
+    filter:drop-shadow(0 0 8px rgba(255,255,255,.15));
+
+}
+
+/* ---------- Smooth ---------- */
+
+body,
+.subject-card,
+.student-card,
+.result-card,
+button,
+input,
+.top-header{
+
+    transition:.35s ease;
 
 }
